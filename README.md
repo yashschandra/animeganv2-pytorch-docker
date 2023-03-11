@@ -12,7 +12,7 @@ this will build the docker image and run the lambda function (locally) reachable
 
 test it -
 ```
-python test.py lambda
+python test.py lambda <input image path>
 ```
 and we should get an `output.jpeg` file in the project root folder.
 
@@ -26,6 +26,6 @@ this will build the docker image and run a python server reachable at port 9000.
 
 test it -
 ```
-python test.py server
+python test.py server <input image path>
 ```
 and we should get `output.jpeg` file in the project root folder.

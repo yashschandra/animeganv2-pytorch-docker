@@ -6,7 +6,6 @@ import sys
 
 lambda_url = 'http://localhost:9000/2015-03-31/functions/function/invocations'
 server_url = 'http://localhost:9000'
-input_path = 'input.png'
 output_path = 'output.jpeg'
 
 if __name__ == '__main__':
@@ -18,6 +17,7 @@ if __name__ == '__main__':
     else:
         print('invalid argument')
         exit
+    input_path = sys.argv[2]
     input = Image.open(input_path)
     buffered = BytesIO()
     input.save(buffered, "PNG")
